@@ -1,4 +1,4 @@
-app.factory('service', [$http, function($http) {
+app.factory('service', ['$http', function($http) {
 
 	var mainService = {
 
