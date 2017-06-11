@@ -1,0 +1,53 @@
+<div class="row custom-margin">
+    <div class="col-md-6 col-sm-3">
+
+      <div class="page-header">
+          <h2>some template</h2>
+      </div>
+
+      <div class="container">
+         <div class="row collection">
+            <div class="col-sm-3 col-md-4" ng-repeat="data in datas | filter:someRandomText track by $index" >
+            <!--  <div class="col-sm-1 col-md-2" ng-repeat="flower in flowers | filter:someRandomText track by $index" > -->
+              <div class="thumbnail custom-holder" >
+                <div class="caption">
+                  <h3 ui-sref="contact({id: contact.id})" ng-click="">{{data.name}}</h3>
+                  <p>{{data.email}}</p>
+                  <p>{{data.phone}}</p>
+                  <p>{{data.website}}</p>
+                </div>
+                <!-- <img class="image" ng-src="{{flower['image link']}}" alt="..." ng-click="openGallery($index)"> -->
+
+              </div>
+            </div>
+         </div>
+      </div>
+    </div>
+</div>
+
+<!-- <div class="page-header">
+  <a href="/#/home">back</a>
+
+  <h3>
+    <a ng-show="post.link" href="{{post.link}}">{{post.title}}</a>
+    <span ng-hide="post.link">{{post.title}}</span>
+  </h3>
+</div>
+
+<div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+  <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotesComm(post, comment)"></span>
+
+  {{comment.upvotes}} - by {{comment.author}}
+
+  <span class="comment-body">{{comment.body}}</span>
+</div>
+
+<form ng-submit="addComment()">
+  <h3>Add a new comment</h3>
+
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Comment" ng-model="body"></input>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Post</button>
+</form> -->
